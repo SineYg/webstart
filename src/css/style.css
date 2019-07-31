@@ -227,6 +227,7 @@ img {
 
 .hero-list__text {
   max-width: 300px;
+  font-size: 14px;
 }
 
 @media (max-width: 1200px) {
