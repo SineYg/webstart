@@ -1,6 +1,23 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/");
+  src: url("../fonts/MuseoSansCyrl/?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -14,21 +31,36 @@ img {
 
 @media (max-width: 1200px) {
   .container {
-    width: 760px;
+    max-width: 950px;
+    width: 96%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 726px;
+    width: 96%;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 580px;
-    width: 95%;
+    max-width: 528px;
+    width: 96%;
   }
 }
 
 @media (max-width: 567px) {
   .container {
-    max-width: 500px;
-    width: 90%;
+    max-width: 390px;
+    width: 96%;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 320px;
+    width: 96%;
   }
 }
 
@@ -89,6 +121,8 @@ img {
   margin-left: 30px;
   font-size: 13px;
   font-weight: 400;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .navbar__phone {
@@ -98,6 +132,8 @@ img {
   font-weight: 400;
   margin-top: 10px;
   text-decoration: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -116,7 +152,7 @@ img {
   }
 }
 
-/* Стили главного экрана */
+/* Стили главного экранаg */
 .hero {
   padding: 50px 0;
   background-color: #f5f5f5;
@@ -128,25 +164,33 @@ img {
   display: flex;
 }
 
+.hero-image img {
+  display: block;
+}
+
 .hero-text {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding-right: 140px;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding-right: 100px;
 }
 
 .hero-text__title {
   font-size: 41px;
   font-weight: 400;
   line-height: 55px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .hero-text__subtitle {
   display: inline-block;
-  margin-bottom: 70px;
+  margin-bottom: 45px;
   font-size: 20px;
   font-weight: 500;
   line-height: 65px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .hero-list {
@@ -186,17 +230,38 @@ img {
 }
 
 @media (max-width: 1200px) {
+  .hero-list {
+    margin-bottom: 44px;
+  }
+  .hero-text {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
   .hero-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .hero-list {
-    margin-bottom: 44px;
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1,4;
+    margin-bottom: 15px;
   }
-  .hero-text {
-    padding-right: 10px;
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  .hero-list__item {
+    margin-bottom: 20px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+  }
+  .hero-list__image {
+    margin-right: 15px;
   }
 }
 
@@ -218,5 +283,55 @@ img {
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+}
+
+@media (max-width: 567px) {
+  .hero-text__title {
+    font-size: 20px;
+    line-height: 1,4;
+    margin-bottom: 10px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+  .hero-list__item {
+    margin-bottom: 15px;
+  }
+  .hero-list__text {
+    font-size: 12px;
+  }
+  .hero-list__image {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-text {
+    padding: 0;
+  }
+  .hero-text__title {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 23px;
+    line-height: 1;
+  }
+  .hero-list {
+    max-width: 100%;
+  }
+  .hero-list__item {
+    margin-bottom: 10px;
+  }
+  .hero-list__text {
+    font-size: 11px;
+    max-width: 200px;
+  }
+  .hero-list__image {
+    margin-right: 10px;
   }
 }
