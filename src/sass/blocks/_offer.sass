@@ -1,0 +1,92 @@
+.offer
+    background: url('../img/offer-bg.png') no-repeat
+    background-position: center right 
+    background-size: contain
+    position: relative
+    &:before 
+        content: ''
+        width: 50%
+        height: 100%
+        top: 0
+        left: 0
+        position: absolute
+        background-color: #ffffff
+    &-block
+        width: 50%
+        padding-right: 90px
+        position: relative
+    &__form 
+        margin-bottom: 30px
+    &__title 
+        max-width: 360px
+        line-height: 35px
+        margin-bottom: 24px
+    &__subtitle 
+        max-width: 250px
+        margin-bottom: 30px
+    &__input 
+        margin-bottom: 30px
+        width: 240px
+        &:focus 
+            outline-color: orange
+            
+        &:first-child 
+            margin-right: 10px
+    &__button 
+        width: 100%
+        min-height: 70px
+        +bold
+    &-call 
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &__info 
+        max-width: 50%
+        font-size: 15px
+        line-height: 20px
+    &-phone 
+        display: flex
+        flex-direction: column
+        justify-content: center
+    &__text
+        margin-top: 0
+        margin-bottom: 15px
+        display: block 
+        font-size: 15px
+        line-height: 10px
+    &__phone 
+        line-height: 10px
+        font-size: 15px
+        text-decoration: none
+        color: $text-color
+        +bold
+
+@media (max-width: 1200px)
+    .offer 
+        &__input 
+            width: 100%
+            margin-bottom: 10px
+        &__button 
+            font-size: 13px
+@media (max-width: 768px)
+    .offer 
+        background: #fff
+        padding-right: 0
+        &-block 
+            padding: 0 15px
+            width: 100%
+@media (max-width: 420px)
+    .offer 
+        &__title 
+            font-size: 18px
+            font-weight: 400
+            line-height: 1
+        &__subtitle 
+            font-size: 14px
+            font-weight: 400
+        &-call 
+            flex-direction: column
+            align-items: flex-start
+        &__info 
+            margin-bottom: 18px
+            max-width: 100%
