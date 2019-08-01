@@ -74,7 +74,7 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 20px 30px;
+  padding: 18px 30px;
   color: #333333;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -93,7 +93,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 80px 0;
 }
 
 .section-title {
@@ -205,9 +205,10 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   padding-right: 100px;
+  margin-right: 20px;
 }
 
 .hero-text__title {
@@ -221,7 +222,7 @@ img {
 
 .hero-text__subtitle {
   display: inline-block;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
   font-size: 20px;
   font-weight: 500;
   line-height: 65px;
@@ -268,6 +269,8 @@ img {
 .hero-list__text {
   max-width: 300px;
   font-size: 14px;
+  line-height: 24px;
+  width: 250px;
 }
 
 @media (max-width: 1200px) {
@@ -406,9 +409,10 @@ img {
 }
 
 .offer__title {
+  margin-top: 0;
   max-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .offer__subtitle {
@@ -449,7 +453,7 @@ img {
 }
 
 .offer__info {
-  max-width: 50%;
+  max-width: 47%;
   font-size: 15px;
   line-height: 20px;
 }
