@@ -11,7 +11,7 @@ $(document).ready(function() {
     close.on('click', function() {
         modal.removeClass('modal_active');
     });
-
+    
     up.on('click', function() {
         $(window).scrollTop(0);
     });

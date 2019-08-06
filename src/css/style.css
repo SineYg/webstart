@@ -27,12 +27,27 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100;
 }
 
 .container {
   width: 1170px;
   margin: auto;
+}
+
+.btn-up {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: #f5f5f5;
+  outline: none;
+  border: none;
+  opacity: 0.4;
+}
+
+.btn-up:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 1200px) {
@@ -46,6 +61,9 @@ img {
   .container {
     max-width: 726px;
     width: 96%;
+  }
+  .btn-up {
+    display: none;
   }
 }
 
@@ -553,7 +571,16 @@ img {
 
 .modal-dialog {
   margin: auto;
-  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
   width: 90%;
   min-width: 200px;
   background-color: #fff;
@@ -565,4 +592,9 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal-column {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }

@@ -83,9 +83,9 @@
         <div class="offer-block">
             <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
             <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-            <form action="#" class="form offer__form">
-              <input type="text" class="input offer__input" placeholder="Ваше имя">
-              <input type="tell" class="input offer__input" placeholder="Ваш телефон">
+            <form action="#" id="offer-form" class="form offer__form">
+              <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+              <input type="tell" name="userphone" class="input offer__input" placeholder="Ваш телефон">
               <button class="button offer__button">Получить бесплатный дизайн-проект</button>
             </form>
             <!-- /.form offer__form -->
@@ -105,18 +105,27 @@
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <button class="modal-dialog__close" id="close">&times;</button>
-      <h4 class="modal-dialog__title">Всплывающее окно</h4>
+      <div class="modal-column">
+        Контент
+      </div>
+      <div class="modal-column">
+        <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
+        <form action="#" class="form modal__form">
+          <input type="text" class="input offer__input" placeholder="Ваше имя">
+          <input type="tell" class="input offer__input" placeholder="Ваш телефон">
+          <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+          <span class="offer__info">Наш менеджер перезвонит Вам в течение 60 секунд</span>
+        </form>
+      </div>
     </div>
     <!-- /.modal-dialog -->
   </div>
-  <div class="container">
-    <button class="button" id="up">
-      Наверх
-    </button>
-  </div>
+  <button class="btn-up btn-active" id="up">
+    Наверх
+  </button>
   <!-- /.modal --> 
-  <script src="js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
   <script src="js/modal.js"></script>
 </body>
 </html>
