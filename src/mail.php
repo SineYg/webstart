@@ -1,2 +1,3 @@
 <?php 
-    echo "Форма обработана";
+$data = $_POST;
+echo $data['username'];

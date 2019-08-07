@@ -6,8 +6,37 @@ $(document).ready(function(){
             type: 'POST',
             data: $(this).serialize(),
             success: function(data) {
-                console.log(data);
+                $('.success').html(data + ', Ваша форма отправлена!')
             }
         });
+    });
+    $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'), 
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 });

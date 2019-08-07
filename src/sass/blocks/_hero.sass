@@ -2,11 +2,7 @@
     padding: 50px 0
     background-color: $bg-color
     &-block
-        display: flex
-    &-image 
-        img 
-            display: block
-            
+        display: flex     
     &-text 
         flex-basis: 50%
         padding-right: 100px
@@ -108,22 +104,29 @@
                 margin-right: 15px
 @media (max-width: 420px)
     .hero
+        padding: 40px 0
+        &-image
+            max-width: 270px
+            img 
+                max-width: 100%
         &-text
-            padding: 0
+            margin: auto
             &__title 
-                font-size: 20px
-                line-height: 1
-                margin-bottom: 10px
+                font-size: 24px
+                font-weight: 400
+                line-height: 1.1
+                margin-bottom: 15px
             &__subtitle 
                 font-size: 16px
-                margin-bottom: 23px
+                margin-bottom: 30px
                 line-height: 1
         &-list 
             max-width: 100%
             &__item
-                margin-bottom: 10px
+                margin-bottom: 20px
             &__text
-                font-size: 11px
-                max-width: 200px
+                font-size: 12px
+                font-weight: 400
+                line-height: 1
             &__image
                 margin-right: 10px

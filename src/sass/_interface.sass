@@ -3,8 +3,6 @@
 body 
     +reg 
     color: $text-color
-img 
-    max-width: 100
 .container
     width: 1170px
     margin: auto
@@ -20,7 +18,36 @@ img
     opacity: 0.4
     &:hover 
       opacity: 0.8
-
+.section 
+  padding: 78px 0
+  &-title 
+    font-size: 24px
+    +bold 
+    text-align: center
+  &-subtitle 
+    display: block
+    font-size: 16px
+.input 
+  border: 1px solid $border-input
+  padding: 23px 26px
+  font-size: 15px
+  border-radius: 10px
+.arrows 
+  max-width: 120px
+  margin: auto
+  display: flex
+  justify-content: space-between
+  margin-top: 65px
+.button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 18px 30px
+    color: $text-color
+    transition: 0.3s
+    &:hover
+      background-color: lighten($main-color, 10%)
+      cursor: pointer
 @media (max-width: 1200px)
   .container
     max-width: 950px
@@ -42,35 +69,24 @@ img
   .container
     max-width: 390px
     width: 96%
+  .button
+    padding: 15px 27px
+    border-radius: 2px
+
 
 @media (max-width: 420px)
   .container
-    max-width: 320px
+    max-width: 285px
     width: 96%
-.button
-    border-radius: 10px
-    background-color: $main-color
-    border: none
-    padding: 18px 30px
-    color: $text-color
-    transition: 0.3s
-    &:hover
-      background-color: lighten($main-color, 10%)
-      cursor: pointer
-@media (max-width: 567px)
-    .button
-        padding: 15px 27px
-        border-radius: 5px
-.section 
-  padding: 80px 0
-  &-title 
-    font-size: 24px
-    +bold 
-  &-subtitle 
-    display: block
-    font-size: 16px
-.input 
-  border: 1px solid $border-input
-  padding: 23px 26px
-  font-size: 15px
-  border-radius: 10px
+  .section 
+    padding: 53px 0
+    text-align: left
+    &-title 
+      font-size: 18px
+      font-weight: 400
+      line-height: 1.9
+      +bold 
+      text-align: center
+
+    
+  
