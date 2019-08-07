@@ -133,7 +133,7 @@ body {
 
 @media (max-width: 420px) {
   .container {
-    max-width: 285px;
+    max-width: 320px;
     width: 96%;
   }
   .section {
@@ -410,12 +410,14 @@ body {
   }
   .hero-image {
     max-width: 270px;
+    margin: auto;
   }
   .hero-image img {
     max-width: 100%;
   }
   .hero-text {
     margin: auto;
+    padding: 0;
   }
   .hero-text__title {
     font-size: 24px;
@@ -615,6 +617,14 @@ body {
   margin-bottom: 95px;
 }
 
+.slider {
+  margin: auto;
+}
+
+.slider__image {
+  margin: auto;
+}
+
 @media (max-width: 420px) {
   .portfolio {
     padding-top: 30px;
@@ -623,6 +633,10 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.2;
+  }
+  .slider__item {
+    width: 246px;
+    height: 186px;
   }
 }
 
