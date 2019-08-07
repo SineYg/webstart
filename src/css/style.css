@@ -617,12 +617,12 @@ body {
   margin-bottom: 95px;
 }
 
-.slider {
+.slider__image {
   margin: auto;
 }
 
-.slider__image {
-  margin: auto;
+.slider__item {
+  margin-right: 20px;
 }
 
 @media (max-width: 420px) {
