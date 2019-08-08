@@ -81,6 +81,10 @@ body {
   margin-top: 65px;
 }
 
+.arrows:hover {
+  cursor: pointer;
+}
+
 .button {
   border-radius: 10px;
   background-color: #ffd200;
