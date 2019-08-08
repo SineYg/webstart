@@ -1,3 +1,4 @@
+new WOW().init();
 $(document).ready(function(){ 
     $('#offer-form').on('submit', function(event) {
         event.preventDefault();
