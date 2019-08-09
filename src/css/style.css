@@ -122,6 +122,10 @@ body {
     max-width: 528px;
     width: 96%;
   }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 567px) {
@@ -802,6 +806,228 @@ body {
   }
   .card__link {
     margin-bottom: 15px;
+  }
+}
+
+/* Стили для блока brif */
+.brif {
+  background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 215px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__button {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview {
+  padding-right: 65px;
+}
+
+.interview__title {
+  margin-bottom: 45px;
+  font-size: 22px;
+  line-height: 1.4;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview__subtitle {
+  display: block;
+  margin-bottom: 100px;
+  font-size: 16px;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview-list__counter {
+  display: inline-block;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+
+.interview-list__text {
+  max-width: 420px;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+.form__title {
+  margin-bottom: 45px;
+  font-size: 22px;
+  line-height: 1.4;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.form__description {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 30px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .form__subtitle {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__form {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 420px) {
+  .brif__button {
+    margin-top: 0;
+    max-width: 280px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  .brif__input {
+    margin-bottom: 10px;
+    max-width: 270px;
+  }
+  .brif__input:last-child {
+    margin-bottom: 0;
+  }
+  .interview__title {
+    max-width: 250px;
+    line-height: 1.2;
+    font-size: 18px;
+  }
+  .interview__subtitle {
+    max-width: 190px;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .interview-list__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 250px;
+  }
+  .interview-list__counter {
+    margin-right: 5px;
+    min-width: 35px;
+  }
+  .form {
+    padding: 0;
+  }
+  .form__title {
+    margin-bottom: 22px;
+    font-size: 17px;
+    line-height: 1.4;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .form__subtitle {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+  .form__description {
+    display: block;
+    width: 200px;
+    line-height: 1.6;
+    font-size: 15px;
   }
 }
 
