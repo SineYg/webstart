@@ -29,3 +29,24 @@
             display: flex
             align-items: flex-start
             margin-bottom: 39px
+@media (max-width: 420px)
+    .footer 
+        display: flex
+        flex-direction: column
+    .map 
+        position: static
+        width: 100%
+        order: 1
+    .contacts
+        flex-basis: 100%
+        top: 0
+        padding-top: 20px
+        padding-left: 20px
+        &__title 
+            font-size: 18px
+            font-weight: 400
+            line-height: 1.2
+            margin-bottom: 40px
+        &-list 
+            &__item 
+                margin-bottom: 50px
