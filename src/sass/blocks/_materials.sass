@@ -1,7 +1,7 @@
 .materials 
-    padding: 100px 0
-    padding-bottom: 0
+    padding: 10px 0
     &__title 
+        margin-bottom: 90px
         font-size: 32px
         font-weight: 400
         line-height: 50px
@@ -13,8 +13,7 @@
         display: flex
         justify-content: space-between
     &__item 
-        margin: 100px 0
-        width: 370px
+        max-width: 370px
         background-color: $bg-color
         display: flex
         flex-direction: column
@@ -25,10 +24,30 @@
         font-size: 16px
         font-weight: 400
         line-height: 23px
-        width: 339px
+        max-width: 339px
 .bold 
     display: inline
     +bold
-
-
-        
+@media (max-width: 420px)
+    .materials 
+        &__title 
+            font-size: 18px
+            font-weight: 400
+            line-height: 1.2
+            padding: 72px 20px
+            margin-bottom: 60px
+        &-block 
+            flex-direction: column
+            align-items: center
+        &__text 
+            display: inline-block
+            font-size: 12px
+            font-weight: 400
+            line-height: 16.83px
+        &__item 
+            max-width: 272px
+            height: 300px
+            margin-bottom: 30px
+        &__man 
+            width: 100%
+            height: 100%

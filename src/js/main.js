@@ -13,7 +13,7 @@ $(document).ready(function(){
         },
         messages:{
             username: {
-                required: "Укажите имя"
+                required: "Укажите имя",
                 minlength: jQuery.validator.format("Имя не должно быть короче 2 символов")
             },
             email: "Нам нужен ваш email",

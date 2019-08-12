@@ -769,7 +769,7 @@ body {
 
 @media (max-width: 420px) {
   .price {
-    padding: 30px 0;
+    padding: 30px 0 0 0;
   }
   .price__title {
     width: 250px;
@@ -1032,6 +1032,10 @@ body {
 }
 
 /* Стили для блока steps */
+.steps {
+  padding: 20px 0;
+}
+
 .steps__title {
   font-size: 30px;
   font-weight: 400;
@@ -1045,16 +1049,16 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 45px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .steps-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .steps__item {
@@ -1104,13 +1108,57 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 420px) {
+  .steps {
+    padding: 0 0 25px 0;
+  }
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .steps__arrow {
+    display: none;
+  }
+  .steps__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  .steps__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+  .steps__image {
+    margin-bottom: 15px;
+  }
+  .steps__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .steps__item {
+    margin-bottom: 40px;
+  }
+}
+
 /* Стили для блока materials */
 .materials {
-  padding: 100px 0;
-  padding-bottom: 0;
+  padding: 10px 0;
 }
 
 .materials__title {
+  margin-bottom: 90px;
   font-size: 32px;
   font-weight: 400;
   line-height: 50px;
@@ -1131,8 +1179,7 @@ body {
 }
 
 .materials__item {
-  margin: 100px 0;
-  width: 370px;
+  max-width: 370px;
   background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1152,7 +1199,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
-  width: 339px;
+  max-width: 339px;
 }
 
 .bold {
@@ -1161,10 +1208,44 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 420px) {
+  .materials__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 72px 20px;
+    margin-bottom: 60px;
+  }
+  .materials-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .materials__text {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.83px;
+  }
+  .materials__item {
+    max-width: 272px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .materials__man {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 /* Стили для блока guarantees */
 .guarantees {
-  padding-top: 0;
-  padding-bottom: 240px;
+  padding-top: 95px;
+  padding-bottom: 200px;
 }
 
 .guarantees__title {
@@ -1198,6 +1279,7 @@ body {
 
 .guarantees__image {
   border: 20px solid #f5f5f5;
+  margin-bottom: 15px;
 }
 
 .guarantees__text {
@@ -1205,6 +1287,40 @@ body {
   font-weight: 400;
   line-height: 24px;
   text-align: center;
+}
+
+@media (max-width: 420px) {
+  .guarantees {
+    padding: 30px;
+    padding-bottom: 10px;
+  }
+  .guarantees-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .guarantees__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 50px;
+  }
+  .guarantees__item {
+    margin-bottom: 25px;
+  }
+  .guarantees__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 200px;
+  }
+  .guarantees__image {
+    margin-bottom: 20px;
+  }
 }
 
 /* Стили модального окна */
