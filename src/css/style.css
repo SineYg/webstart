@@ -1381,6 +1381,11 @@ body {
   margin-bottom: 39px;
 }
 
+.contacts__phone {
+  text-decoration: none;
+  color: #333333;
+}
+
 @media (max-width: 420px) {
   .footer {
     display: -webkit-box;
