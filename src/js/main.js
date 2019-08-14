@@ -27,7 +27,7 @@ $(document).ready(function(){
             type: 'POST',
             data: $(this).serialize(),
             success: function(data) {
-                $('.success').html(data + ', Ваша форма отправлена!')
+                $('.success').html(data + ', Ваша форма отправлена!');
             }
         });
     });
@@ -38,7 +38,7 @@ $(document).ready(function(){
             type: 'POST',
             data: $(this).serialize(),
             success: function(data) {
-                $('.success').html(data + ', Ваша форма отправлена!')
+                $('.success').html(data + ', Ваша форма отправлена!');
             }
         });
     });
